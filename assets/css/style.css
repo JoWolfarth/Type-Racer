@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* Header*/
+
+.tr-header {
+    background: #ff8400;
+    color: #f2e9e4;
+    padding: 1rem 0;
+    box-shadow: 0 2px 8px rgba(34, 34, 59, 0.08);
+}
+
+.tr-header__container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+
+.tr-header__title {
+    font-family: "Alegreya", serif;
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.tr-header__instructions-btn {
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1.2rem;
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.tr-header__instructions-btn:hover,
+.tr-header__instructions-btn:focus {
+    background: #9a8c98;
+    outline: none;
+}
+
+/* Main Grid */
+
+.tr-main-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.tr-main-grid__left,
+.tr-main-grid__right {
+    width: 100%;
+}
+
+#start-instructions {
+    font-weight: 500;
+    padding-top: 0.5rem;
+}
+
+/*Media Queries*/
+
+/*Media query for screens 600px and up)*/
+@media (max-width: 600px) {
+    .tr-header__container {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0 0.5rem;
+    }
+    .tr-header__title {
+        font-size: 1.5rem;
+    }
+    .tr-header__instructions-btn {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+/*Media query for screens 768px and up)*/
+@media (min-width: 768px) {
+    .tr-main-grid {
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .tr-main-grid__left {
+        width: 66.6666%;
+    }
+    .tr-main-grid__right {
+        width: 33.3333%;
+    }
+}
